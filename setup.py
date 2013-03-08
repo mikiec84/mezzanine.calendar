@@ -1,43 +1,26 @@
 from setuptools import setup, find_packages
-import os
+import sys, os
 
-version = '1.0'
+version = '0.0.1'
 
-long_description = (
-    open('README.txt').read()
-    + '\n' +
-    'Contributors\n'
-    '============\n'
-    + '\n' +
-    open('CONTRIBUTORS.txt').read()
-    + '\n' +
-    open('CHANGES.txt').read()
-    + '\n')
+setup(name='mezzanine-calendar',
+    version=version,
+    description="A Django Mezzanine Calendar App",
+    long_description="""""",
+    classifiers=[],
+    keywords='',
+    author='Aleksandr Vladimirskiy',
+    author_email='sasha@butchershop.co',
+    url='http://www.butchershop.co',
+    license='BSD',
+    packages=find_packages(exclude=['ez_setup', 'examples', 'tests']),
+    include_package_data=True,
+    zip_safe=False,
+    install_requires=[
+      # -*- Extra requirements: -*-
+    ],
+    entry_points="""
+    # -*- Entry points: -*-
+    """,
+)
 
-setup(name='mezzanine.calendar',
-      version=version,
-      description="A Django/Mezzanine Calendar content type",
-      long_description=long_description,
-      # Get more strings from
-      # http://pypi.python.org/pypi?%3Aaction=list_classifiers
-      classifiers=[
-        "Programming Language :: Python",
-        ],
-      keywords='',
-      author='',
-      author_email='',
-      url='http://svn.plone.org/svn/collective/',
-      license='gpl',
-      packages=find_packages('src'),
-      package_dir = {'': 'src'},
-      namespace_packages=['mezzanine'],
-      include_package_data=True,
-      zip_safe=False,
-      install_requires=[
-          'setuptools',
-          # -*- Extra requirements: -*-
-      ],
-      entry_points="""
-      # -*- Entry points: -*-
-      """,
-      )

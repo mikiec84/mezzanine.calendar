@@ -9,3 +9,4 @@ class Event(models.Model):
     start = models.DateTimeField()
     end = models.DateTimeField()
     guestlist = models.IntegerField()
+
