@@ -1,6 +1,6 @@
 from django.contrib import admin
+from mezzanine.pages.admin import PageAdmin
 
 from .models import Event
 
-admin.site.register(Event)
-
+admin.site.register(Event, PageAdmin)
